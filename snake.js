@@ -62,7 +62,7 @@ class Apple {
 
 var canvas = document.getElementById("canvas");
 
-var snake = new Snake(20, 20, 20);
+var snake = new Snake(30, 30, 30);
 var apple = new Apple();
 var canvasContext = canvas.getContext("2d");
 
@@ -71,7 +71,7 @@ window.onload = () => {
 };
 
 function gameLoop() {
-  setInterval(show, 1000 / 10);
+  setInterval(show, 1000 / 10); //speed snake
 }
 
 function show() {
