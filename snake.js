@@ -62,7 +62,7 @@ class Apple {
 
 var canvas = document.getElementById("canvas");
 
-var snake = new Snake(30, 30, 30);
+var snake = new Snake(20, 20, 20);
 var apple = new Apple();
 var canvasContext = canvas.getContext("2d");
 
@@ -124,7 +124,7 @@ function draw() {
     );
   }
   canvasContext.font = "20px Arial";
-  canvasContext.fillStyle = "pink";
+  canvasContext.fillStyle = "blue";
   canvasContext.fillText(
     "Score: " + (snake.tail.length - 1),
     canvas.width - 120,
