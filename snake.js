@@ -71,7 +71,7 @@ window.onload = () => {
 };
 
 function gameLoop() {
-  setInterval(show, 1000 / 10); //speed snake
+  setInterval(show, 2000 / 10); //speed snake
 }
 
 function show() {
@@ -124,7 +124,7 @@ function draw() {
     );
   }
   canvasContext.font = "20px Arial";
-  canvasContext.fillStyle = "blue";
+  canvasContext.fillStyle = "white";
   canvasContext.fillText(
     "Score: " + (snake.tail.length - 1),
     canvas.width - 120,
